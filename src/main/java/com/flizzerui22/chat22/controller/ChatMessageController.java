@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin("http://flizzer-lakshmanan-ui.herokuapp.com")
+@CrossOrigin(origins = "*")
 @RestController
 public class ChatMessageController {
     @Autowired
