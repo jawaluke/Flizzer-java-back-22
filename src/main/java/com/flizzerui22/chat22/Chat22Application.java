@@ -19,7 +19,9 @@ public class Chat22Application {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/user/*").allowedOrigins("https://flizzer-lakshmanan-ui.herokuapp.com","*");
+				registry.addMapping("/user/*").allowedOrigins("https://flizzer-lakshmanan-ui.herokuapp.com","*")
+						.allowedHeaders("*")
+						.allowedMethods("*");
 			}
 		};
 	}
