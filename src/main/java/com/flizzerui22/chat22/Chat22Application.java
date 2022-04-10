@@ -19,7 +19,7 @@ public class Chat22Application {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/user/*").allowedOrigins("http://localhost:4200","http://192.168.0.103:4200");
+				registry.addMapping("/user/*").allowedOrigins("http://localhost:4200","http://192.168.0.103:4200", "https://flizzer-lakshmanan-ui.herokuapp.com");
 			}
 		};
 	}
