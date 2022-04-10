@@ -20,7 +20,7 @@ public class Chat22Application {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
 				registry.addMapping("/user/*")
-						.allowedOrigins("https://flizzer-lakshmanan-ui.herokuapp.com")
+						.allowedOrigins("flizzer-lakshmanan-ui.herokuapp.com")
 						.allowedMethods("GET", "POST")
 						.allowedHeaders("Origin", "Accept", "Content-Type")
 						.maxAge(3600);;
