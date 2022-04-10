@@ -13,7 +13,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@CrossOrigin("https://flizzer-lakshmanan-ui.herokuapp.com/")
+@CrossOrigin("http://flizzer-lakshmanan-ui.herokuapp.com")
 public class ChatController {
 
 
