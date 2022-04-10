@@ -23,7 +23,7 @@ public class Chat22Application {
 						.allowedOrigins("*")
 						.allowedMethods("GET", "POST")
 						.allowedHeaders("Origin", "Accept", "Content-Type", "Authorization")
-						.allowCredentials(true)
+						.allowCredentials(false)
 						.maxAge(3600);;
 			}
 		};
