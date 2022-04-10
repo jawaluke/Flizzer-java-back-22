@@ -23,7 +23,7 @@ public class CorsFilter implements Filter {
         HttpServletRequest req = (HttpServletRequest) request;
 
         String origin = req.getHeader("Origin");
-        final List<String> allowedOrigins = Arrays.asList("https://flizzer-lakshmanan-ui.herokuapp.com");
+        final List<String> allowedOrigins = Arrays.asList("https://flizzer-lakshmanan-ui.herokuapp.com","http://localhost:4200","*");
         res.setHeader("Access-Control-Allow-Origin", allowedOrigins.contains(origin) ? origin : "*");
         res.setHeader( "Access-Control-Allow-Credentials", "true" );
         res.setHeader("Vary", "Origin");

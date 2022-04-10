@@ -21,7 +21,7 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chatSocket")
-                .setAllowedOrigins("http://flizzer-lakshmanan-ui.herokuapp.com","*")
+                .setAllowedOrigins("http://flizzer-lakshmanan-ui.herokuapp.com","http://localhost:4200")
                 .withSockJS();
     }
 

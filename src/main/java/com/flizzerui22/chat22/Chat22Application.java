@@ -19,11 +19,10 @@ public class Chat22Application {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/user/*")
-						.allowedOrigins("flizzer-lakshmanan-ui.herokuapp.com")
+				registry.addMapping("*")
+						.allowedOrigins("flizzer-lakshmanan-ui.herokuapp.com","http://localhost:4200")
 						.allowedMethods("GET", "POST")
-						.allowedHeaders("Origin", "Accept", "Content-Type")
-						.maxAge(3600);;
+						.allowedHeaders("Origin", "Accept", "Content-Type");
 			}
 		};
 	}
