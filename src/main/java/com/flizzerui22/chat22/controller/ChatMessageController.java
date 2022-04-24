@@ -48,7 +48,8 @@ public class ChatMessageController {
                 .build();
 
 
-        chatMessageService.postMessageToDB(sendMessageFormat.getSender(),
+        chatMessageService.postMessageToDB(sendMessageFormat.getChatId(),
+                sendMessageFormat.getSender(),
                 sendMessageFormat.getReceiver(),
                 sendMessageFormat.getMessage(),
                 sendMessageFormat.getTimes(),
@@ -59,6 +60,8 @@ public class ChatMessageController {
 
         return true;
     }
+
+
 
 
 

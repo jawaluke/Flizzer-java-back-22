@@ -49,10 +49,14 @@ public class ChatMessageService {
         return chatMessageRepository.findMessagesBetweenTheUsers(sender, receiver);
     }
 
-    public ChatMessage postMessageToDB(String sender, String receiver, String msg, String time, String tag) {
+    public ChatMessage postMessageToDB(int chatId, String sender, String receiver, String msg, String time, String tag) {
         System.out.println("inside service post");
+        int chatId_gen = (int) (chatMessageRepository.count()+1);
+        if(tag.equals("EDITED")) {
+            chatId_gen = chatId;
+        }
         return chatMessageRepository.save(ChatMessage.builder()
-                .chatId((int) (chatMessageRepository.count()+1))
+                .chatId(chatId_gen)
                 .sender(sender)
                 .receiver(receiver)
                 .message(msg)
