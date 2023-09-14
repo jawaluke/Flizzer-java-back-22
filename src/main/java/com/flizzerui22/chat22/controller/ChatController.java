@@ -27,6 +27,7 @@ public class ChatController {
     @GetMapping("/info")
     public String greetInfo(){
         System.out.println("Greetings page");
+        log.info("user entered to welcome page");
         return "Welcome to flizzer chatUI22";
     }    
 
