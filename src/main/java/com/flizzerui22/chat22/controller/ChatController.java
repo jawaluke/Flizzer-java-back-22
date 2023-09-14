@@ -5,6 +5,8 @@ import com.flizzerui22.chat22.model.ChatUser;
 import com.flizzerui22.chat22.service.ChatMessageService;
 import com.flizzerui22.chat22.service.ChatUserService;
 
+import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +16,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*")
+@Slf4j
 public class ChatController {
 
 
