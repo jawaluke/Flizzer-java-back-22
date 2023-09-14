@@ -33,7 +33,7 @@ public class ChatController {
 
     @GetMapping("/user/{userName}")
     public ChatUser getUserByName(@PathVariable("userName") String userName) {
-        log.info("user getting username");
+        System.out.println("user getting username");
         return chatUserService.getUserByUserName(userName);
     }
 
